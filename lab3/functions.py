@@ -26,3 +26,14 @@ def isprime(n):
 numlist = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
 prime_numlist = list(filter(lambda x: isprime(x), numlist))
 print(prime_numlist)
+
+#5
+def permutations(some):
+    n = len(some)
+
+    for i in range(n):
+        for j in range(n):
+            print(some[(j-i)], end=" ")
+        print()
+k=str(input("soz:"))
+permutations(k)
