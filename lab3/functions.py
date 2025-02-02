@@ -45,12 +45,12 @@ for perm in result:
     
     
 #6
-def reverse_words(sentence):
+def reverse(sentence):
     words = sentence.split()
     reversed_sentence = " ".join(reversed(words))
     return reversed_sentence
 user_input = input("Sentence: ")
-print(reverse_words(user_input))
+print(reverse(user_input))
 
 
 #7
@@ -79,10 +79,40 @@ print(contains_007([7, 0, 0]))
 
 #9
 import math
-def areaOfSphere(r):
+def area(r):
     return 4/3 *math.pi * r**3
 r=int(input())
-print(areaOfSphere(r))
+print(area(r))
 
 
 #10
+def uniquelist(arr):
+    arr.sort()
+    unique_arr=[]
+    for i in arr:
+        if i not in unique_arr:
+            unique_arr.append(i)
+    print(*unique_arr)
+    return unique_arr
+uniquelist([1, 4, 5, 2, 5, 3, 1, 5, 8, 5, 3, 4, 5, 1, 7])
+
+
+#11
+def is_polindrom(s):
+    revs = s[::-1]
+    if revs == s:
+        return True
+    return False
+r=str(input())
+print(is_polindrom(r))
+
+
+#12
+def histogram(length):
+    for i in length:
+        print('*' * i)
+histogram([4, 9, 7])
+
+
+#13
+
