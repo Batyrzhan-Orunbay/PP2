@@ -46,7 +46,6 @@ def playprev():
         playdm = lenz - 1 # если индекс меньше 0, переключает на следующий трек
     else:
         playdm = (playdm - 1) % lenz # переключаем циклично
-    
     play_music() # запускаем трек
 
 run = True
@@ -73,7 +72,6 @@ while run:
             pg.mixer.music.unpause() # если неиграет, нужно играть
             isplaying = True
         time.sleep(0.5)
-    
     pg.display.update() # окновляет окно
    
 pg.quit() # завершает работу
